@@ -102,7 +102,7 @@ func GCPSchema(machineTypes []string) []byte {
 				Type: "array",
 				Items: []Type{{
 					Type: "string",
-					Enum: ToInterfaceSlice([]string{components.Kiali, components.Tracing}),
+					Enum: ToInterfaceSlice([]string{components.Kiali, components.Tracing, components.Eventing}),
 				}},
 				AdditionalItems: f,
 				UniqueItems:     t,
@@ -198,7 +198,7 @@ func AzureSchema(machineTypes []string) []byte {
 				Type: "array",
 				Items: []Type{{
 					Type: "string",
-					Enum: ToInterfaceSlice([]string{components.Kiali, components.Tracing}),
+					Enum: ToInterfaceSlice([]string{components.Kiali, components.Tracing, components.Eventing}),
 				}},
 				AdditionalItems: f,
 				UniqueItems:     t,
